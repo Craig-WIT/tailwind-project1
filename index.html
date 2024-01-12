@@ -6,11 +6,19 @@
     <title>Tailwind Project</title>
     <link rel="stylesheet" href="./output/tailwind.css"/>
 </head>
-<body>
+<body class="h-screen flex items-center justify-center bg-cyan-600">
 
-    <div class="w-32 h-32 bg-red-400 m-12 text-white">
-        Craig
+<div class="max-w-sm mx-auto p-12 bg-white rounded-xl shadow-lg space-y-4">
+        <img class="h-24 mx-auto rounded-full ring-4 ring-cyan-800" src="./images/finalProject.jpg" alt="profile"/>
+        
+    <div class="text-center space-y-2">
+        <div>
+            <p class="text-lg text-black font-bold">Profile Image</p>
+            <p class="text-gray-500 font-medium">Course Link</p>
+        </div>
+        <button class="px-4 py-1 border border-cyan-600 text-sm text-green-400 font-medium bg-green-900 rounded-xl">More Info</button>
     </div>
+</div>
     
 </body>
 </html>
