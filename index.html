@@ -6,19 +6,25 @@
     <title>Tailwind Project</title>
     <link rel="stylesheet" href="./output/tailwind.css"/>
 </head>
-<body class="h-screen flex items-center justify-center bg-cyan-600">
+<body class="h-screen flex items-center justify-center bg-cyan-600 dark:bg-slate-500">
 
-<div class="max-w-sm mx-auto p-12 bg-white rounded-xl shadow-lg space-y-4 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6">
-        <img class="h-24 mx-auto rounded-full ring-4 ring-cyan-800 sm:flex-shrink-0 transform hover:scale-110 duration-500" src="./images/finalProject.jpg" alt="profile"/>
+<div class="max-w-sm mx-auto p-12 bg-white rounded-xl shadow-lg space-y-4 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6 dark:bg-slate-400">
+        <img class="h-24 mx-auto rounded-full ring-4 ring-cyan-800 dark:ring-black sm:flex-shrink-0 transform hover:scale-110 duration-500" src="./images/finalProject.jpg" alt="profile"/>
         
     <div class="text-center space-y-2 sm:text-left">
         <div>
-            <p class="text-lg text-black font-bold">Profile Image</p>
-            <p class="text-gray-500 font-medium">Course Link</p>
+
+            <img class="moon cursor-pointer h-8 mx-auto" src="./images/darkMode.png"/>
+            <img class="sun cursor-pointer h-8 mx-auto bg-slate-400" src="./images/lightMode.png"/>
+
+            <p class="text-lg text-black font-bold ">Profile Image</p>
+            <p class="text-gray-500 font-medium ">Course Link</p>
         </div>
-        <button class="px-4 py-1 border border-cyan-600 text-sm text-green-400 font-medium bg-green-900 hover:bg-green-400 rounded-xl hover:text-white hover:border-transparent focus:outline-none focus:ring-4 ring-red-500 focus:ring-offset-2">More Info</button>
+        <button class="px-4 py-1 border border-cyan-600 text-sm text-green-400 font-medium bg-green-900 dark:bg-slate-400 dark:text-black dark:hover:bg-black dark:hover:text-white hover:bg-green-400 rounded-xl hover:text-white hover:border-transparent focus:outline-none focus:ring-4 ring-red-500 focus:ring-offset-2">More Info</button>
     </div>
 </div>
     
+<script src="./app.js"></script>
+
 </body>
 </html>
