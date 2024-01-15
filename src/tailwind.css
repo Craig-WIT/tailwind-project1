@@ -3,17 +3,32 @@
 @tailwind utilities;
 
 .display-none{
-    @apply hidden
+    @apply hidden;
 }
 
-.btn{
-    @apply px-4 py-1 border text-sm font-medium dark:bg-slate-400 dark:text-black dark:hover:bg-black dark:hover:text-white rounded-xl hover:text-white hover:border-transparent focus:outline-none focus:ring-4 ring-red-500 focus:ring-offset-2;
+@layer base{
+    h1{
+        @apply text-2xl;
+    }
 }
 
-.btn-green{
-    @apply border-cyan-600 text-green-400  bg-green-900 hover:bg-green-400;
+@layer utilities{
+    .text-body{
+        font-size: 20px;
+    }
 }
 
-.btn-blue{
-    @apply border-blue-600 text-blue-400 bg-blue-900 hover:bg-blue-400;
+@layer components{
+    .btn{
+        @apply px-4 py-1 border text-sm font-medium dark:bg-slate-400 dark:text-black dark:hover:bg-black dark:hover:text-white rounded-xl hover:text-white hover:border-transparent focus:outline-none focus:ring-4 ring-red-500 focus:ring-offset-2;
+    }
+    
+    .btn-green{
+        @apply border-cyan-600 text-green-400  bg-green-900 hover:bg-green-400;
+    }
+    
+    .btn-blue{
+        @apply border-blue-600 text-blue-400 bg-blue-900 hover:bg-blue-400;
+    }
 }
+
