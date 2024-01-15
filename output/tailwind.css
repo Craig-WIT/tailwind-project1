@@ -743,10 +743,6 @@ video {
   transition-duration: 500ms;
 }
 
-.text-body{
-  font-size: 20px;
-}
-
 .display-none {
   display: none;
 }
