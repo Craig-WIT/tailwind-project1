@@ -6,9 +6,15 @@
     @apply hidden;
 }
 
-@layer base{
-    h1{
-        @apply text-2xl;
+@media screen(sm) {
+    .text-body{
+        font-size: 30px;
+    }
+}
+
+@media screen(xl) {
+    .text-body{
+        font-size: 50px;
     }
 }
 
